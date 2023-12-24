@@ -3,16 +3,18 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	hideArrow?: boolean; 
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, hideArrow } = Astro.props;
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
 			{title}
-			<span>&rarr;</span>
+			{!hideArrow &&
+			<span>&rarr;</span> }
 		</h2>
 		<p>
 			{body}
@@ -46,6 +48,8 @@ const { href, title, body } = Astro.props;
 		margin: 0;
 		font-size: 1.25rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		font-weight: bold;
+		color: rgb(225, 115, 12);
 	}
 	p {
 		margin-top: 0.5rem;
