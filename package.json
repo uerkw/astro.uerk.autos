@@ -12,19 +12,19 @@
     "pages:deploy": "astro build && wrangler pages deploy ./dist"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^8.0.0",
-    "@astrojs/react": "^3.0.8",
-    "@astrojs/tailwind": "^5.0.4",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "astro": "^4.0.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "swiper": "^11.0.5",
-    "tailwindcss": "^3.4.0"
+    "@astrojs/cloudflare": "^8.1.0",
+    "@astrojs/react": "^3.6.3",
+    "@astrojs/tailwind": "^5.1.5",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "astro": "^4.16.19",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "swiper": "^11.2.10",
+    "tailwindcss": "^3.4.18"
   },
   "devDependencies": {
-    "wrangler": "^3.22.1"
+    "wrangler": "^3.114.15"
   },
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
 }
